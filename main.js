@@ -47,8 +47,7 @@ function requestBluetoothDevice() {
 
   return navigator.bluetooth.requestDevice(
       {acceptAllDevices: true}
-    ).
-      then(device => {
+    ).then(device => {
         log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
         deviceCache.addEventListener('gattserverdisconnected',
