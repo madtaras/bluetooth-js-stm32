@@ -197,3 +197,4 @@ function send(data) {
 function writeToCharacteristic(characteristic, data) {
   characteristic.writeValue(new TextEncoder().encode(data));
 }
+Raw
